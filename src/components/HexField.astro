@@ -1,0 +1,31 @@
+---
+// Memory-dump background
+---
+<div class="hex-field" aria-hidden="true">
+  <pre class="hex-base" id="hex-base"></pre>
+  <div class="hex-vignette"></div>
+</div>
+
+<script>
+  const base = document.getElementById('hex-base') as HTMLElement;
+  const ops = ['48 89 5C 24 08','48 83 EC 20','48 8B D9','FF 15 8A 10 00 00','E8 44 12 00 00','85 C0','74 11','75 05','48 8D 4C 24 30','90','CC','31 C0','C3','41 57','0F 1F 44 00 00','48 31 C9','4C 8B C8','EB FE'];
+
+  // seeded PRNG so the dump is stable between reloads
+  let s = 0x7d895397;
+  const rnd = () => ((s = (Math.imul(s ^ (s >>> 15), 2246822507) + 0x6d2b79f5) | 0), ((s >>> 0) % 10000) / 10000);
+
+  function build() {
+    const rows = Math.ceil(window.innerHeight / 16) + 1;
+    const cols = Math.ceil(window.innerWidth / 6.6) + 2;
+    let out = '';
+    for (let i = 0; i < rows; i++) {
+      let line = '0x00007FF6' + (0x200000 + i * 16).toString(16).toUpperCase() + '  ';
+      while (line.length < cols) line += ops[Math.floor(rnd() * ops.length)] + '  ';
+      out += line.slice(0, cols) + '\n';
+    }
+    base.textContent = out;
+  }
+  build();
+  let rt: number;
+  window.addEventListener('resize', () => { clearTimeout(rt); rt = window.setTimeout(build, 150); });
+</script>
