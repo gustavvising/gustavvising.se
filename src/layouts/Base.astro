@@ -22,7 +22,7 @@ const {
   published,
   image = '/og.png',
 } = Astro.props;
-const fullTitle = title ? `${title} - Gustav Vising` : 'Gustav Vising - Cybersäkerhetskonsult';
+const fullTitle = title ? `${title} - Gustav Vising` : 'Gustav Vising';
 const canonical = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site);
 const ogImage = new URL(image, Astro.site);
 ---
