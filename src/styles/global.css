@@ -289,8 +289,10 @@
 }
 
 .about-photo {
+  width: 66.667%;
+  margin-inline: auto;
   border-radius: 1rem;
-  transform: rotate(-3deg);
+  transform: rotate(-8deg);
   transition: transform .5s cubic-bezier(.2,.8,.2,1);
 }
 
