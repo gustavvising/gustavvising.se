@@ -50,17 +50,16 @@ const ld = {
           <Content />
         </div>
       </div>
-
       <nav class="mt-28 grid gap-4 border-t border-line pt-10 sm:grid-cols-2" aria-label="Fler artiklar">
         {newer ? (
-          <a href={postUrl(newer)} class="group rounded-xl border border-line bg-deep/70 p-6 transition-colors hover:border-accent">
+          <a href={postUrl(newer)} class="group rounded-xl border border-line bg-deep/70 p-6 transition-colors">
             <span class="font-mono text-xs uppercase tracking-widest text-mute">← nyare</span>
             <span class="mt-3 block font-display text-xl font-bold leading-tight">{newer.data.title}</span>
           </a>
         ) : <span />}
 
         {older ? (
-          <a href={postUrl(older)} class="group rounded-xl border border-line bg-deep/70 p-6 text-left transition-colors hover:border-accent sm:text-right">
+          <a href={postUrl(older)} class="group rounded-xl border border-line bg-deep/70 p-6 text-left transition-colors sm:text-right">
             <span class="font-mono text-xs uppercase tracking-widest text-mute">äldre →</span>
             <span class="mt-3 block font-display text-xl font-bold leading-tight">{older.data.title}</span>
           </a>
