@@ -303,3 +303,5 @@
   border-radius: 1rem;
   filter: grayscale(1);
 }
+
+.astro-code { color: #dbd7caee; white-space: pre-wrap; overflow-wrap: break-word; }

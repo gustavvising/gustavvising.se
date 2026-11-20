@@ -11,6 +11,9 @@ export default defineConfig({
   integrations: [sitemap(), sri()],
   vite: { plugins: [tailwindcss()], build: { assetsInlineLimit: 0 } },
   markdown: {
-    shikiConfig: { theme: 'vitesse-dark', wrap: true },
+  shikiConfig: {
+    theme: 'vitesse-dark',
+    transformers: [{ pre(node) { delete node.properties.style; } }],
   },
+},
 });
