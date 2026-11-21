@@ -123,8 +123,8 @@ const socials = [
         <div class="reveal">
           {posts.map((p, i) => (
             <a class="post-row" href={postUrl(p)}>
-              <h3 class="font-display text-[clamp(1.4rem,3.4vw,2.6rem)] font-bold leading-[1.1] tracking-[-0.02em]">{p.data.title}</h3>
-              <span class="arrow font-display text-3xl" aria-hidden="true">↗</span>
+              <h3 class="font-display text-[clamp(1.4rem,3.4vw,2.6rem)] lg:text-[clamp(1.3rem,2.8vw,2.2rem)] font-bold leading-[1.1] tracking-[-0.02em]">{p.data.title}</h3>
+              <span class="arrow font-display text-3xl lg:text-2xl" aria-hidden="true">↗</span>
               <span class="meta meta-col font-mono text-[0.78rem] uppercase tracking-widest text-mute transition-colors">
                 {formatDate(p.data.date)}
               </span>
@@ -215,15 +215,15 @@ const socials = [
 				target={s.href.startsWith('http') ? '_blank' : undefined}
 				rel="noopener noreferrer"
 			  >
-				<span class="font-display text-[clamp(1.2rem,2.6vw,2rem)] font-bold lowercase tracking-[-0.03em]">
+				<span class="font-display text-[clamp(1.2rem,2.6vw,2rem)] lg:text-[clamp(1.1rem,2.2vw,1.7rem)] font-bold lowercase tracking-[-0.03em]">
 				  {s.label}
 				</span>
 
 				<span class="flex items-baseline gap-4">
-				  <span class="font-mono text-xs text-mute sm:text-sm">
+				  <span class="font-mono text-xs text-mute sm:text-sm lg:text-[0.8rem]">
 					{s.handle}
 				  </span>
-				  <span class="arrow font-display text-2xl" aria-hidden="true">↗</span>
+				  <span class="arrow font-display text-2xl lg:text-xl" aria-hidden="true">↗</span>
 				</span>
 			  </a>
 			))}
@@ -234,8 +234,8 @@ const socials = [
 
 	<footer class="px-5 pb-10 pt-16 sm:px-10">
 	  <div class="mx-auto flex max-w-[88rem] flex-col gap-3 border-t border-line pt-6 font-mono text-xs uppercase tracking-widest text-mute">
-		<span class="whitespace-nowrap text-[0.6rem] sm:text-xs">© {new Date().getFullYear()} Gustav Vising ◼ Enskild näringsidkare</span>
-		<address class="not-italic leading-relaxed text-[0.6rem] sm:text-xs">
+		<span class="whitespace-nowrap text-[0.6rem] sm:text-xs lg:text-[0.68rem]">© {new Date().getFullYear()} Gustav Vising ◼ Enskild näringsidkare</span>
+		<address class="not-italic leading-relaxed text-[0.6rem] sm:text-xs lg:text-[0.68rem]">
 		  Dragonvägen 7 lgh 1110<br />
 		  702 54 Örebro
 		</address>

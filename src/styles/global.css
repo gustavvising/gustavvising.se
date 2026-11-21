@@ -309,3 +309,8 @@
 }
 
 .astro-code { color: #dbd7caee; white-space: pre-wrap; overflow-wrap: break-word; }
+
+@media (min-width: 1024px) {
+  .social { padding-block: .9rem; }
+  .post-row { padding-block: 1.3rem; }
+}
