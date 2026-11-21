@@ -30,9 +30,11 @@
   margin-bottom: -.08em;
 }
 
-.js .line-mask > span {
-  display: block;
-  transform: translateY(110%);
+@media (scripting: enabled) {
+  .line-mask > span {
+    display: block;
+    transform: translateY(110%);
+  }
 }
 
 .hex-field { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
@@ -139,7 +141,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .marquee, .cursor { animation: none; }
-  .js .reveal, .js .line-mask > span { opacity: 1; transform: none; }
+  .reveal, .line-mask > span { opacity: 1; transform: none; }
 }
 
 .hero-title {
