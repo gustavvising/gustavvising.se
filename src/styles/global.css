@@ -133,6 +133,7 @@
 .prose-gv pre code { background: none; color: inherit; padding: 0; font-size: inherit; word-break: normal; }
 .prose-gv figure { max-width: 100%; margin-block: 2.2em; }
 .prose-gv figure img { display: block; max-width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--color-line); background: var(--color-deep); }
+.prose-gv figure img { aspect-ratio: attr(width type(<number>)) / attr(height type(<number>)); }
 .prose-gv figcaption { margin-top: .7rem; font: 400 .78rem/1.5 var(--font-mono); color: var(--color-mute); }
 .prose-gv table { width: 100%; border-collapse: collapse; font-size: .95rem; display: block; overflow-x: auto; }
 .prose-gv th, .prose-gv td { border-bottom: 1px solid var(--color-line); padding: .6rem .8rem; text-align: left; }
@@ -302,6 +303,7 @@
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 900 / 887;
   border-radius: 1rem;
   filter: grayscale(1);
 }
