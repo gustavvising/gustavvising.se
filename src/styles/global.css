@@ -310,17 +310,9 @@
   border-top: 1px solid var(--color-rule);
 }
 
-.post-row .arrow {
-  transition: transform .45s cubic-bezier(.2,.8,.2,1);
-}
-
-.post-row:hover .arrow {
-  transform: translate(4px,-4px);
-}
-
 @media (max-width: 640px) {
   .post-row {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .post-row .meta-col {
@@ -340,14 +332,6 @@
 
 .social:last-child {
   border-bottom: 1px solid var(--color-rule);
-}
-
-.social .arrow {
-  transition: transform .4s cubic-bezier(.2,.8,.2,1);
-}
-
-.social:hover .arrow {
-  transform: translate(4px,-4px);
 }
 
 @media (min-width: 1024px) {
