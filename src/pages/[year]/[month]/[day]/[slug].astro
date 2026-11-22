@@ -26,7 +26,7 @@ const ld = {
 };
 ---
 <Base title={title} description={description} type="article" lang={lang} published={date}>
-  <div id="progress" class="fixed inset-x-0 top-0 z-[55] h-[3px] origin-left scale-x-0 bg-accent"></div>
+  <div id="progress" class="fixed inset-x-0 top-0 z-[55] h-[3px] origin-left scale-x-0 bg-green"></div>
 
   <main class="px-5 pb-24 pt-32 sm:px-10 sm:pt-40">
     <article class="mx-auto max-w-[88rem]">
@@ -40,7 +40,7 @@ const ld = {
           {formatDate(date)}
         </p>
 
-        <h1 class="font-display text-[clamp(1.6rem,5vw,4rem)] font-extrabold leading-[1.05] tracking-[-0.035em] [overflow-wrap:anywhere]">
+        <h1 class="font-display text-[clamp(1.5rem,4vw,3.2rem)] font-extrabold leading-[1.05] tracking-[-0.035em] [overflow-wrap:anywhere]">
           {title}
         </h1>
       </header>
@@ -68,7 +68,7 @@ const ld = {
 
       <footer class="mt-20 flex flex-col gap-8 border-t border-rule pt-6 font-mono text-xs uppercase tracking-widest text-mute sm:flex-row sm:items-start sm:justify-between sm:gap-4">
 		  <div class="flex flex-col gap-3">
-			<span class="whitespace-nowrap text-[0.6rem] sm:text-xs">© {new Date().getFullYear()} Gustav Vising <span class="text-brick" aria-hidden="true">◼&#xFE0E;</span> Enskild näringsidkare</span>
+			<span class="whitespace-nowrap text-[0.6rem] sm:text-xs">© {new Date().getFullYear()} Gustav Vising <span class="text-green" aria-hidden="true">◼&#xFE0E;</span> Enskild näringsidkare</span>
 			<address class="not-italic leading-relaxed text-[0.6rem] sm:text-xs lg:text-[0.68rem]">
 			  Dragonvägen 7 lgh 1110<br />
 			  702 54 Örebro

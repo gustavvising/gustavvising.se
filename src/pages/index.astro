@@ -27,7 +27,7 @@ const socials = [
         </p>
         <h1 class="hero-title font-display font-extrabold lowercase leading-[0.86] tracking-[-0.045em]" aria-label="Gustav Vising">
           <span class="line-mask"><span data-hero-line>gustav</span></span>
-          <span class="line-mask"><span data-hero-line>vising<span class="text-brick">.</span></span></span>
+          <span class="line-mask"><span data-hero-line>vising<span class="text-green">.</span></span></span>
         </h1>
         <div class="reveal mt-10 flex flex-col gap-6 border-t border-rule pt-6 sm:flex-row sm:items-end sm:justify-between" data-hero-meta>
           <p class="whitespace-nowrap text-[clamp(0.7rem,3.6vw,1.125rem)] leading-relaxed text-mute">
@@ -82,7 +82,7 @@ const socials = [
         </div>
 		  <div class="reveal mt-10 flex justify-center">
 			<a href="mailto:gustav@gustavvising.se?subject=F%C3%B6rfr%C3%A5gan%20om%20s%C3%A4kerhetstest"
-			class="group inline-flex items-center self-start rounded-full bg-brick px-6 py-3.5 font-mono text-[0.78rem] uppercase tracking-widest text-ink transition-colors hover:bg-hover sm:px-7 sm:text-sm">
+			class="group inline-flex items-center self-start rounded-full bg-green px-6 py-3.5 font-mono text-[0.78rem] uppercase tracking-widest font-semibold text-night transition-colors hover:bg-mint sm:px-7 sm:text-sm">
 			Boka ett strategisamtal
 		  </a>
 	</div>
@@ -96,9 +96,9 @@ const socials = [
 		<ol class="relative mx-auto max-w-5xl before:absolute before:inset-y-2 before:left-[6.5px] before:w-px before:bg-rule lg:before:left-1/2 lg:before:-translate-x-1/2">
 		  {steps.map((step, i) => (
 			<li class="reveal relative pb-14 pl-10 last:pb-0 lg:grid lg:grid-cols-2 lg:gap-20 lg:pb-0 lg:pl-0 lg:not-first:-mt-8">
-			  <span class={`absolute left-0 top-1 size-3.5 rounded-full border-2 border-brick lg:left-1/2 lg:-translate-x-1/2 ${i === steps.length - 1 ? 'bg-brick' : 'bg-night'}`} aria-hidden="true"></span>
+			  <span class={`absolute left-0 top-1 size-3.5 rounded-full border-2 border-green lg:left-1/2 lg:-translate-x-1/2 ${i === steps.length - 1 ? 'bg-green' : 'bg-night'}`} aria-hidden="true"></span>
 			  <div class={i % 2 === 0 ? 'lg:col-start-1 lg:text-right' : 'lg:col-start-2'}>
-				<p class="font-mono text-xs uppercase tracking-widest text-brick">Steg {i + 1}</p>
+				<p class="font-mono text-xs uppercase tracking-widest text-green">Steg {i + 1}</p>
 				<h3 class="mt-3 font-display text-[clamp(1.5rem,3vw,2.4rem)] font-extrabold lowercase leading-none tracking-[-0.04em]">{step.title}</h3>
 				<p class="mt-4 text-sm leading-relaxed text-mute sm:text-base lg:inline-block lg:max-w-md">{step.text}</p>
 			  </div>
@@ -129,7 +129,7 @@ const socials = [
 				  Du kan läsa mer om sårbarheter och säkerhet i mina{' '}
 				  <a
 					href="#artiklar"
-					class="text-hover underline decoration-hover decoration-2 underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
+					class="text-mint underline decoration-mint decoration-2 underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
 				  >artiklar</a>.
 				</p>
             </div>
@@ -185,7 +185,7 @@ const socials = [
 		  </div>
 
 		  <h3 class="mt-2 font-display text-[clamp(1.4rem,5.5vw,5rem)] font-extrabold lowercase leading-[1] tracking-[-0.04em]">
-			github<span class="text-brick">/</span><br />gustavvising
+			github<span class="text-green">/</span><br />gustavvising
 		  </h3>
 		</a>
 		<div class="mt-4 grid gap-4 md:grid-cols-2">
@@ -253,7 +253,7 @@ const socials = [
 		<div class="grid gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-24">
 		  <div>
 			<h2 class="reveal font-display text-[clamp(2.6rem,7vw,6rem)] font-extrabold lowercase leading-[0.95] tracking-[-0.04em]">
-			  hör<br />av dig<span class="text-brick">.</span>
+			  hör<br />av dig<span class="text-green">.</span>
 			</h2>
 			<p class="reveal mt-8 max-w-md text-lg leading-relaxed text-mute">
 			  Har du frågor om mina tjänster eller vill du få ett system testat? Hör av dig så tar vi det därifrån. Och är du bara nyfiken på cybersäkerhet tar jag gärna en kaffe.
@@ -287,7 +287,7 @@ const socials = [
 
 	<footer class="px-5 pb-10 pt-16 sm:px-10">
 	  <div class="mx-auto flex max-w-[88rem] flex-col gap-3 border-t border-rule pt-6 font-mono text-xs uppercase tracking-widest text-mute">
-		<span class="whitespace-nowrap text-[0.6rem] sm:text-xs">© {new Date().getFullYear()} Gustav Vising <span class="text-brick" aria-hidden="true">◼&#xFE0E;</span> Enskild näringsidkare</span>
+		<span class="whitespace-nowrap text-[0.6rem] sm:text-xs">© {new Date().getFullYear()} Gustav Vising <span class="text-green" aria-hidden="true">◼&#xFE0E;</span> Enskild näringsidkare</span>
 		<address class="not-italic leading-relaxed text-[0.6rem] sm:text-xs lg:text-[0.68rem]">
 		  Dragonvägen 7 lgh 1110<br />
 		  702 54 Örebro

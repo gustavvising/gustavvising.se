@@ -5,9 +5,8 @@
   --color-deep: #120608;
   --color-ink: #f4eeec;
   --color-mute: #a89698;
-  --color-brick: #c0392b;
-  --color-accent: #a94f43;
-  --color-hover: #e2584a;
+  --color-green: #179782;
+  --color-mint: #3fd6b4;
   --color-rule: #4a3c3e;
   --color-line: rgb(244 238 236 / 0.12);
   --font-display: "Syne Variable", "Syne", ui-sans-serif, system-ui, sans-serif;
@@ -31,12 +30,12 @@
   }
 
   ::selection {
-    background: var(--color-brick);
+    background: var(--color-green);
     color: #fff;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-brick);
+    outline: 2px solid var(--color-green);
     outline-offset: 4px;
     border-radius: 2px;
   }
@@ -128,7 +127,7 @@
   display: inline-block;
   width: .55em;
   height: 1em;
-  background: var(--color-brick);
+  background: var(--color-green);
   vertical-align: -.12em;
   margin-left: .15em;
   animation: blink 1.1s steps(1) infinite;
@@ -255,7 +254,7 @@
   width: .5rem;
   height: .5rem;
   border-radius: 50%;
-  background: var(--color-brick);
+  background: var(--color-green);
   animation: pulse 1.8s ease-in-out infinite;
 }
 
@@ -267,7 +266,7 @@
   display: block;
   height: 2.2rem;
   border-radius: 3px;
-  background: var(--color-brick);
+  background: var(--color-green);
   opacity: .3;
   animation: month 3.6s ease-in-out infinite;
   animation-delay: calc(var(--i) * .15s);
@@ -398,7 +397,7 @@
 }
 
 .prose-gv a {
-  color: #e2584a;
+  color: var(--color-mint);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -517,7 +516,7 @@
 }
 
 .prose-gv blockquote {
-  border-left: 2px solid var(--color-brick);
+  border-left: 2px solid var(--color-green);
   padding-left: 1.2rem;
   color: var(--color-mute);
 }
