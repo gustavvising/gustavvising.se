@@ -18,5 +18,5 @@ export function postUrl(p: Post) {
   return `/${year}/${month}/${day}/${slug}`;
 }
 export function formatDate(d: Date, lang = 'sv') {
-  return d.toLocaleDateString(lang === 'sv' ? 'sv-SE' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+  return d.toLocaleDateString(lang === 'sv' ? 'sv-SE' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
