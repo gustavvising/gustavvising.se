@@ -45,13 +45,12 @@ const socials = [
           <!-- Penetrationstest -->
           <article class="service parallelogram-card reveal lg:col-span-6">
             <h3 class="service-title">penetrationstest</h3>
-            <p class="service-text">Manuella tester där varje system gås igenom grundligt för att kartlägga hela attackytan och hitta sårbarheterna.</p>
+            <p class="service-text">Manuella tester där varje system gås igenom grundligt för att kartlägga hela attackytan och hitta sårbarheterna.
+			Testerna utförs externt med ögonen från en angripare över internet eller internt med tillgång till ert nätverk.
+			</p>
             <ul class="mt-auto flex flex-wrap gap-2 pt-8">
               {penTargets.map((t) => <li class="chip">{t}</li>)}
             </ul>
-            <p class="mt-5 font-mono text-[0.78rem] uppercase tracking-widest text-mute">
-              utförs <span class="text-ink">internt</span> eller <span class="text-ink">externt</span>
-            </p>
           </article>
 
           <!-- Säkerhetsretainer -->
@@ -60,11 +59,6 @@ const socials = [
             <p class="service-text">
               Era tjänster förändras hela tiden och en säkerhetsbedömning blir snabbt inaktuell. Med en retainer testas systemen varje månad så att nya sårbarheter upptäcks i tid. Retainern ger också en kontinuerlig dialog kring säkerhetsarbetet, med rådgivning och utbildning av personal.
             </p>
-            <div class="mt-auto pt-8">
-			  <p class="font-mono text-[0.78rem] uppercase tracking-widest text-ink">
-				test varje månad
-			  </p>
-			</div>
           </article>
 
           <!-- Red team -->
