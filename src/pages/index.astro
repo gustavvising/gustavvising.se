@@ -96,7 +96,7 @@ const socials = [
 		<ol class="relative mx-auto max-w-5xl before:absolute before:inset-y-2 before:left-[6.5px] before:w-px before:bg-rule lg:before:left-1/2 lg:before:-translate-x-1/2">
 		  {steps.map((step, i) => (
 			<li class="reveal relative pb-14 pl-10 last:pb-0 lg:grid lg:grid-cols-2 lg:gap-20 lg:pb-0 lg:pl-0 lg:not-first:-mt-8">
-			  <span class="absolute left-0 top-1 size-3.5 rounded-full border-2 border-brick bg-night lg:left-1/2 lg:-translate-x-1/2" aria-hidden="true"></span>
+			  <span class={`absolute left-0 top-1 size-3.5 rounded-full border-2 border-brick lg:left-1/2 lg:-translate-x-1/2 ${i === steps.length - 1 ? 'bg-brick' : 'bg-night'}`} aria-hidden="true"></span>
 			  <div class={i % 2 === 0 ? 'lg:col-start-1 lg:text-right' : 'lg:col-start-2'}>
 				<p class="font-mono text-xs uppercase tracking-widest text-brick">Steg {i + 1}</p>
 				<h3 class="mt-3 font-display text-[clamp(1.5rem,3vw,2.4rem)] font-extrabold lowercase leading-none tracking-[-0.04em]">{step.title}</h3>
