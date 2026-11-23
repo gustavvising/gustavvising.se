@@ -10,7 +10,7 @@
   --color-rule: #4a3c3e;
   --color-line: rgb(244 238 236 / 0.12);
   --font-display: "Syne Variable", "Syne", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
