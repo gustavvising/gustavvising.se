@@ -21,7 +21,6 @@
     scroll-behavior: auto;
     -webkit-text-size-adjust: 100%;
 	}
-  }
 
   body {
     font-family: var(--font-sans);
@@ -40,6 +39,7 @@
     outline-offset: 4px;
     border-radius: 2px;
   }
+}
 
 .hex-field {
   position: fixed;
@@ -228,9 +228,9 @@
   padding: .35rem .7rem;
   border: 1px solid var(--color-green);
   border-radius: 2px;
-  background: var(--color-green);
+  background: rgb(23 151 130 / .12);
   font: 500 .78rem/1.2 var(--font-mono);
-  color: var(--color-night);
+  color: var(--color-mint);
 }
 
 @keyframes pulse {
@@ -262,8 +262,6 @@
   width: 66.667%;
   margin-inline: auto;
   border-radius: 1rem;
-  transform: rotate(-8deg);
-  transition: transform .5s cubic-bezier(.2,.8,.2,1);
 }
 
 .about-photo img {
