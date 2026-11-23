@@ -84,7 +84,7 @@
 
 .hero-title {
   --pad: 2.5rem;
-  font-size: min(calc((100vw - var(--pad)) / 6.5), 14rem);
+  font-size: min(calc((100vw - var(--pad)) / 7.5), 12rem);
 }
 
 .line-mask {
