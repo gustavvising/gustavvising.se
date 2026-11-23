@@ -28,7 +28,7 @@ const canonical = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site)
 const ogImage = new URL(image, Astro.site);
 ---
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} class={hex ? undefined : 'plain'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

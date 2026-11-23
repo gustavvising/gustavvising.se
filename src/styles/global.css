@@ -3,6 +3,7 @@
 @theme {
   --color-night: #1a0a0d;
   --color-deep: #120608;
+  --color-card: #120608;
   --color-ink: #f4eeec;
   --color-mute: #a89698;
   --color-green: #179782;
@@ -39,6 +40,12 @@
     outline-offset: 4px;
     border-radius: 2px;
   }
+}
+
+.plain {
+  --color-night: #151416;
+  --color-deep: #0f0e10;
+  --color-card: #1c1b1d;
 }
 
 .hex-field {
@@ -128,7 +135,7 @@
   position: absolute;
   inset: 0 8px;
   z-index: -1;
-  background: #120608;
+  background: var(--color-card);
   border: 1px solid rgb(255 255 255 / .7);
   border-radius: 8px;
   transform: skewX(-5deg);
