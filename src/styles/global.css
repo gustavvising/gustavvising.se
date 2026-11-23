@@ -20,6 +20,7 @@
     color: var(--color-ink);
     scroll-behavior: auto;
     -webkit-text-size-adjust: 100%;
+	}
   }
 
   body {
@@ -39,15 +40,6 @@
     outline-offset: 4px;
     border-radius: 2px;
   }
-
-  html.lenis, html.lenis body {
-    height: auto;
-  }
-
-  .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-  }
-}
 
 .hex-field {
   position: fixed;
@@ -102,11 +94,8 @@
   margin-bottom: -.08em;
 }
 
-@media (scripting: enabled) {
-  .line-mask > span {
-    display: block;
-    transform: translateY(110%);
-  }
+.line-mask > span {
+  display: block;
 }
 
 .marquee {
@@ -139,7 +128,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .marquee, .cursor { animation: none; }
-  .reveal, .line-mask > span { opacity: 1; transform: none; }
 }
 
 .parallelogram-card {
@@ -154,7 +142,7 @@
   position: absolute;
   inset: 0 8px;
   z-index: -1;
-  background: rgb(18 6 8 / .8);
+  background: #120608;
   border: 1px solid rgb(255 255 255 / .7);
   border-radius: 8px;
   transform: skewX(-5deg);

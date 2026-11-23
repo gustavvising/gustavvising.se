@@ -55,7 +55,7 @@ const ogImage = new URL(image, Astro.site);
         <a href="/" class="font-display text-lg font-extrabold lowercase tracking-tight" aria-label="Gustav Vising, startsidan">
           gv<span class="text-green">.</span>
         </a>
-        <nav class="flex gap-3.5 font-mono text-[0.66rem] uppercase tracking-wider text-mute sm:gap-9 sm:text-[0.78rem] sm:tracking-widest">
+        <nav class="flex gap-2.5 text-[0.78rem] text-mute sm:gap-8 sm:text-[0.72rem]">
 		  <a class="transition-colors hover:text-ink" href="/#tjanster">tjänster</a>
 		  <a class="transition-colors hover:text-ink" href="/#om-mig">om mig</a>
 		  <a class="transition-colors hover:text-ink" href="/#artiklar">artiklar</a>
@@ -68,15 +68,5 @@ const ogImage = new URL(image, Astro.site);
     <div class="relative z-10">
       <slot />
     </div>
-
-    <script>
-      import Lenis from 'lenis';
-      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (!reduce) {
-        const lenis = new Lenis({ lerp: 0.1, anchors: true });
-        const raf = (t: number) => { lenis.raf(t); requestAnimationFrame(raf); };
-        requestAnimationFrame(raf);
-      }
-    </script>
   </body>
 </html>
