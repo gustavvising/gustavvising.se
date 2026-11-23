@@ -13,6 +13,7 @@ interface Props {
   lang?: string;
   published?: Date;
   image?: string;
+  hex?: boolean;
 }
 const {
   title,
@@ -21,6 +22,7 @@ const {
   lang = 'sv',
   published,
   image = '/og.png',
+  hex = false,
 } = Astro.props;
 const fullTitle = title ? `${title} - Gustav Vising` : 'Gustav Vising';
 const canonical = new URL(Astro.url.pathname.replace(/\.html$/, ''), Astro.site);
@@ -48,7 +50,7 @@ const ogImage = new URL(image, Astro.site);
     {published && <meta property="article:published_time" content={published.toISOString()} />}
   </head>
   <body class="grain bg-night text-ink">
-    <HexField />
+    {hex && <HexField />}
 
     <header class="fixed top-0 inset-x-0 z-50 w-full bg-night">
       <div class="mx-auto flex max-w-[88rem] items-center justify-between px-5 py-5 sm:px-10">
