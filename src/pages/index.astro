@@ -134,7 +134,7 @@ const steps = [
 		</div>
         <div class="reveal">
           {posts.map((p, i) => (
-            <a class="post-row" href={postUrl(p)}>
+            <a class="post-row nudge" href={postUrl(p)}>
               <h3 class="font-display text-[clamp(1.4rem,3.4vw,2.6rem)] lg:text-[clamp(1.3rem,2.8vw,2.2rem)] font-bold leading-[1.1] tracking-[-0.02em]">{p.data.title}</h3>
               <span class="meta meta-col font-mono text-[0.78rem] uppercase tracking-widest text-mute transition-colors">
                 {formatDate(p.data.date)}
@@ -160,7 +160,7 @@ const steps = [
 		  href="https://github.com/gustavvising"
 		  target="_blank"
 		  rel="noopener noreferrer"
-		  class="parallelogram-card reveal group relative block overflow-visible p-6 sm:p-10"
+		  class="parallelogram-card nudge reveal group relative block overflow-visible p-6 sm:p-10"
 		>
 		  <h3 class="mt-2 font-display text-[clamp(1.4rem,5.5vw,5rem)] font-extrabold lowercase leading-[1] tracking-[-0.04em]">
 			github.com<span class="text-green">/</span><br />gustavvising
@@ -171,7 +171,7 @@ const steps = [
 			href="https://github.com/gustavvising/ApiDehash"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="parallelogram-card reveal group relative flex flex-col overflow-visible p-6 sm:p-8"
+			class="parallelogram-card nudge reveal group relative flex flex-col overflow-visible p-6 sm:p-8"
 		  >
 			<h3 class="mt-4 font-display text-[clamp(1.6rem,3.5vw,2.6rem)] font-extrabold lowercase leading-[1] tracking-[-0.04em]">
 			  api dehash
@@ -185,7 +185,7 @@ const steps = [
 			  href="https://github.com/gustavvising/RemoteProcessManager"
 			  target="_blank"
 			  rel="noopener noreferrer"
-			  class="parallelogram-card reveal group relative flex flex-col overflow-visible p-6 sm:p-8"
+			  class="parallelogram-card nudge reveal group relative flex flex-col overflow-visible p-6 sm:p-8"
 			>
 			  <h3 class="mt-4 font-display text-[clamp(1.6rem,3.5vw,2.6rem)] font-extrabold lowercase leading-[1] tracking-[-0.04em]">
 				remote process manager

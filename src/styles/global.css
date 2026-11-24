@@ -445,3 +445,14 @@
   border: 0;
   border-top: 1px solid var(--color-rule);
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .nudge > * {
+    transition: transform .35s cubic-bezier(.2,.8,.2,1);
+  }
+
+  .nudge:hover > *,
+  .nudge:focus-visible > * {
+    transform: translate(3px, -3px);
+  }
+}

@@ -52,15 +52,15 @@ const ld = {
       </div>
       <nav class="mt-28 grid gap-4 border-t border-rule pt-10 sm:grid-cols-2" aria-label="Fler artiklar">
         {newer ? (
-		  <a href={postUrl(newer)} class="parallelogram-card group relative block p-6 sm:p-8">
-			<span class="font-mono text-xs uppercase tracking-widest text-mute">nyare</span>
+		  <a href={postUrl(newer)} class="parallelogram-card nudge group relative block p-6 sm:p-8">
+			<span class="font-mono block text-xs uppercase tracking-widest text-mute">nyare</span>
 			<span class="mt-3 block font-display text-xl font-bold leading-tight">{newer.data.title}</span>
 		  </a>
         ) : <span />}
 
         {older ? (
-		  <a href={postUrl(older)} class="parallelogram-card group relative block p-6 text-left sm:p-8 sm:text-right">
-			<span class="font-mono text-xs uppercase tracking-widest text-mute">äldre</span>
+		  <a href={postUrl(older)} class="parallelogram-card nudge group relative block p-6 text-left sm:p-8 sm:text-right">
+			<span class="font-mono block text-xs uppercase tracking-widest text-mute">äldre</span>
 			<span class="mt-3 block font-display text-xl font-bold leading-tight">{older.data.title}</span>
 		  </a>
         ) : <span />}
