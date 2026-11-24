@@ -25,18 +25,18 @@ export default function sri() {
           }
           return cache.get(url);
         };
-        const tag = /<(script|link)\b[^>]*>/g;
+        const tag = /<(script|link)\b[^>]*>/gi;
         let count = 0;
         for await (const file of htmlFiles(root)) {
           const html = await readFile(file, 'utf8');
           const tags = html.match(tag) ?? [];
           let out = html;
           for (const t of new Set(tags)) {
-            if (/\bintegrity=/.test(t)) continue;
-            const isScript = t.startsWith('<script');
-            const isStyle = !isScript && /\brel="stylesheet"/.test(t);
+            if (/\bintegrity=/i.test(t)) continue;
+            const isScript = /^<script/i.test(t);
+            const isStyle = !isScript && /\brel="stylesheet"/i.test(t);
             if (!isScript && !isStyle) continue;
-            const url = t.match(isScript ? /\bsrc="(\/[^"/][^"]*)"/ : /\bhref="(\/[^"/][^"]*)"/)?.[1];
+            const url = t.match(isScript ? /\bsrc="(\/[^"/][^"]*)"/i : /\bhref="(\/[^"/][^"]*)"/i)?.[1];
             if (!url) continue; // skip inline and external
             const withSri = t.replace(/>$/, ` integrity="${await hashOf(url)}">`);
             out = out.split(t).join(withSri);
